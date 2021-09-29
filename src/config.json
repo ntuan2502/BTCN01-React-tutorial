@@ -1,0 +1,7 @@
+{
+  "defaultWidth": 5,
+  "defaultHeight": 5,
+  "minSize": 5,
+  "maxSize": 25,
+  "nSquareToWin": 5
+}
