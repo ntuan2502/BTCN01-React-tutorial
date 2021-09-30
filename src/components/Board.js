@@ -1,7 +1,6 @@
 import React from "react";
-import SquareRow from "./SquareRow"
-import {Square} from "../lib/func"
-
+import SquareRow from "./SquareRow";
+import { Square } from "../lib/func";
 class Board extends React.Component {
   renderSquare(i) {
     return (
