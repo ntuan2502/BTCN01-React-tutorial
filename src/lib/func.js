@@ -1,20 +1,11 @@
 import { nSquareToWin } from "../config.json";
 
-export function Square(props) {
-  console.log(props);
-  if (props.win) {
-    return (
-      <button className="square square-win" onClick={props.onClick}>
-        {props.value}
-      </button>
-    );
-  } else {
-    return (
-      <button className="square" onClick={props.onClick}>
-        {props.value}
-      </button>
-    );
-  }
+export function Square({ win, onClick, value }) {
+  return (
+    <button className={`square ${win ? "square-win" : ""}`} onClick={onClick}>
+      {value}
+    </button>
+  );
 }
 
 export function calculateWinner(squares) {
